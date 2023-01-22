@@ -1,0 +1,38 @@
+.btn{
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 15px;
+    border: 2px red solid;
+    color: black;
+}
+
+.submit-btn{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background-color: aqua;
+    color: black;
+}
+
+.search_meeting{
+    margin-bottom: 10px;
+}
+
+.meetings{
+    display: block;
+    padding: 10px;
+    background-color: aqua;
+    margin: 5px;
+    text-align: center;
+}
+
+.end-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
