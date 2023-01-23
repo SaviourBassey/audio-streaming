@@ -38,7 +38,7 @@ class MeetingView(LoginRequiredMixin, View):
 
             #QR code
             # Data to encode
-            data = f"https://domain/meeting-verification/complete/{meeting_slug}/{meeting_id}/"
+            data = f"https://web-production-7428.up.railway.app/meeting-verification/complete/{meeting_slug}/{meeting_id}/"
             # Creating an instance of QRCode class
             qr = qrcode.QRCode(version = 1,
                 box_size = 10,
