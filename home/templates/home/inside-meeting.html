@@ -18,7 +18,7 @@
         <img src="{% static 'qr_images/MyQRCode1.png' %}" alt="" style="width: 100%; height:100%;">
     </div> -->
 
-    <audio id="player"></audio>
+    
 
     {% if current_meeting.user != request.user %}
     <div style="height: 100vh; width:100%;" class="d-flex justify-content-center align-items-center">
@@ -34,6 +34,8 @@
             <a class="btn btn-transparent" data-toggle="modal" data-target="#viewQR">View QR Code</a>
         </div>
     </div>
+
+    <audio id="player"></audio>
     {% endif %}
 
     <!-- viewQR Modal -->
