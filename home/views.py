@@ -87,9 +87,9 @@ class MeetingVerificationComplete(LoginRequiredMixin, View):
 
 
 class InsideMeetingView(LoginRequiredMixin, View):
-    def get(self, request, SLUG, MEETING_ID, *args, **kwargs):
+    def get(self, request, SLUG, *args, **kwargs):
         try:
-            current_meeting = Meeting.objects.get(slug=SLUG, meeting_id=MEETING_ID)
+            current_meeting = Meeting.objects.get(slug=SLUG)
             print(current_meeting.qr_image.url)
         except:
             return HttpResponse("<h3>Meeting no longer exist</h3>")
