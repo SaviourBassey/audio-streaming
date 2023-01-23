@@ -70,7 +70,7 @@
                 {% if all_meeting %}
                 <div>
                     {% for items in all_meeting %}
-                    <a class="meetings" href="{% url 'home:inside_meeting_view' SLUG=items.slug %}">{{ items.meeting_title }}</a>
+                    <a class="meetings" href="{% url 'home:meeting_verification' SLUG=items.slug %}">{{ items.meeting_title }}</a>
                     {% endfor %}
                 </div>
                 {% else %}
