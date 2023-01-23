@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'audio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASE_URL = config('DATABASE_URL')
+#DATABASE_URL = config('DATABASE_URL')
 
 DATABASES = {
     'default': {
