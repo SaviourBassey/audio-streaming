@@ -55,7 +55,7 @@ class MeetingView(LoginRequiredMixin, View):
             meet = Meeting.objects.create(
                 user=request.user, meeting_title=meeting_title, qr_image=img_name, slug=meeting_slug, meeting_id=meeting_id
             )
-            return redirect("home:inside_meeting_view", SLUG=meet.slug, MEETING_ID=meeting_id)
+            return redirect("home:inside_meeting_view", SLUG=meet.slug)
 
 
 class MeetingVerification(LoginRequiredMixin, View):
