@@ -30,7 +30,7 @@ class MeetingView(LoginRequiredMixin, View):
 
     def post(self, request, *args, **kwargs):
         if Meeting.objects.filter(user=request.user).exists():
-            pass
+            return HttpResponse("<h3>You already have an active meeting</h3>")
         else:
             meeting_title = request.POST.get("meeting_title")
             meeting_slug = slugify(meeting_title)
